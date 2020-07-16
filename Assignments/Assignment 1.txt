@@ -1,0 +1,111 @@
+*********************CREATE DATABASE*************************
+
+create database assignment1;
+
+use assignment1;
+
+*********************CREATE TABLES****************************
+
+Create table salespeople
+(
+	Snum int(4),
+	Sname varchar(10),
+	City varchar(10),
+	Comm float(3,2)
+);
+
+Create table Customers
+(
+	Cnum int(4),
+	Cname varchar(10),
+	City varchar(10),
+	Rating int(4),
+	Snum int(4)
+);
+
+Create table Orders
+(
+	Onum int(4),
+	Amt float(7,2),
+	Odate date,
+	Cnum int(4),
+	Snum int(4)
+);
+
+
+
+**********************INSERT DATA*****************************
+
+insert into salespeople(Snum,Sname,city,comm) 
+values(1001,'Peel','London',.12);
+
+insert into salespeople(Snum,Sname,city,comm) 
+values(1002,'Serres','San Jose',.13);
+
+insert into salespeople(Snum,Sname,city,comm) 
+values(1004,'Motika','London',.11);
+
+insert into salespeople(Snum,Sname,city,comm) 
+values(1007,'Rifkin','Barcelona',.15);
+
+insert into salespeople(Snum,Sname,city,comm) 
+values(1003,'Axelrod','New York',.10);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2001,'Hoffman','London',100,1001);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2002,'Giovanni','Rome',200,1003);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2003,'Liu','San Jose',200,1002);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2004,'Grass','Berlin',300,1002);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2006,'Clemens','London',100,1001);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2008,'Cisneros','San Jose',300,1007);
+
+insert into Customers(Cnum,Cname,City,Rating,Snum) 
+values(2007,'Pereira','Rome',100,1004);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3001,18.69,'1990-03-10',2008,1007);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3003,767.19,'1990-03-10',2001,1001);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3002,1900.10,'1990-03-10',2007,1004);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3005,5160.45,'1990-03-10',2003,1002);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3006,1098.16,'1990-03-10',2008,1007);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3009,1713.23,'1990-04-10',2002,1003);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3007,75.75,'1990-04-10',2004,1002);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3008,4723.00,'1990-05-10',2006,1001);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3010,1309.95,'1990-06-10',2004,1002);
+
+insert into Orders(Onum,Amt,Odate,Cnum,Snum) 
+values(3011,9891.88,'1990-06-10',2006,1001);
+
+*********************DISPLAY TABLE DATA***************************
+
+select * from salespeople;
+
+select * from customers;
+
+select * from orders;
