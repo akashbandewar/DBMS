@@ -1,0 +1,21 @@
+Assignment –2
+Introducing Relational Databases.
+*************************************
+
+1) Which field of the Customers table is the primary key?
+--> CNUM
+
+2) What is the 4th column of the Customers table?
+-->RATING
+
+3) What is another word for row? For column?
+--> Rows in DBMS is known as Record 
+    Rows in RDBMS is also known as Tuple, Entity
+    Column in DBMS is known as Field 
+    Column in RDBMS is also known as Attribute, Method
+
+4) Why isn’t it possible to see the first five rows of a table?
+--> It is not possible to fetch the first five rows (as they were inserted in the table) of the table, 
+    because in RDBMS, the rows are stored as a separate file in the Database server HardDisk and they can be anywhere in the ROM.
+    As the rows are not stored sequentially, we can't access them as per the inserted sequence. Rather, when we search the data, 
+    the data is being searched in HardDisk according to the address. So whichever address is found and matched first, that data is returned first. 
