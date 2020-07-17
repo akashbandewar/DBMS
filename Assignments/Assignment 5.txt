@@ -1,4 +1,4 @@
-Assignment –5 Relational and Logical Operators.
+Assignment â€“5 Relational and Logical Operators.
 *****************************
 
 1) Write a query that will give you all orders for more than Rs. 1,000.
@@ -49,4 +49,4 @@ Select * from Orders where NOT ((odate = '1990-10-03' OR snum >1006) AND amt >= 
 
 6) What is a simpler way to write this query?
 Select snum, sname, city, comm From Salespeople where (comm > .12 OR comm <.14);
---> select * from salespeople where (comm > .12 OR comm < .14);
+--> select * from salespeople;
