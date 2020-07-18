@@ -1,5 +1,5 @@
 Sameer Dehadrai Page: 1
-Assignment –6
+Assignment â€“6
 Using Special Operators in Conditions.
 *************************************************
 
@@ -11,11 +11,12 @@ Using Special Operators in Conditions.
 2) Write a query that selects all of the customers serviced by Peel or Motika.
 (Hint: the snum field relates the two tables to one another).
 --> select * from customers where Snum in(1001,1004);
+    select * from customers where snum in(select snum from salespeople where Sname in('peel','motika'));
 
-3) Write a query that will produce all the customers whose names begin with a letter from ‘A’ to ‘G’.
+3) Write a query that will produce all the customers whose names begin with a letter from â€˜Aâ€™ to â€˜Gâ€™.
 --> select * from customers where cname between 'A' and 'H' and cname not like 'H%';
 
-4) Write a query that selects all customers whose names begin with the letter ‘C’.
+4) Write a query that selects all customers whose names begin with the letter â€˜Câ€™.
 --> select * from customers where cname>='C' and cname < 'D';
     select * from customers where cname between 'C' and 'D' and cname not like 'D%';
 
