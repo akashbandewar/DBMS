@@ -13,5 +13,5 @@ Assume you do not know his customer number (cnum).
 3) Write a query that selects the total amount in orders for each salesperson for whom 
    this total is greater than the amount of the largest order in the table.
 --> select s.num s.sname, sum(amt) from salespeople s, orders o 
-   		where o.snum=s.snum group by o.snum 
+   		where o.snum=s.snum group by s.sname
 			having sum(amt)>(select max(amt) from orders);
