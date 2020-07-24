@@ -1,4 +1,4 @@
-Assignment –2
+Assignment â€“2
 Introducing Relational Databases.
 *************************************
 
@@ -14,7 +14,7 @@ Introducing Relational Databases.
     Column in DBMS is known as Field 
     Column in RDBMS is also known as Attribute, Method
 
-4) Why isn’t it possible to see the first five rows of a table?
+4) Why isnâ€™t it possible to see the first five rows of a table?
 --> It is not possible to fetch the first five rows (as they were inserted in the table) of the table, 
     because in RDBMS, the rows are stored as a separate file in the Database server HardDisk and they can be anywhere in the ROM.
     As the rows are not stored sequentially, we can't access them as per the inserted sequence. Rather, when we search the data, 
